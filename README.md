@@ -15,11 +15,13 @@
 <p>Uma lista encadeada é uma coleção de nós onde cada nó contém um valor e um ponteiro para o próximo nó na sequência. Este projeto inclui implementações básicas e avançadas de listas encadeadas, demonstrando como inserir, remover e buscar elementos.</p>
 
 <h2 id="tipos">Tipos de Listas Encadeadas</h2>
-<p>Lista Encadeada Simples: Cada nó aponta para o próximo nó na lista.
-Lista Duplamente Encadeada: Cada nó aponta para o próximo e para o nó anterior.
-Lista Circularmente Encadeada: O último nó aponta para o primeiro, formando um círculo.</p>
+<ul>
+  <li>Lista Encadeada Simples: Cada nó aponta para o próximo nó na lista.</li>
+  <li>Lista Duplamente Encadeada: Cada nó aponta para o próximo e para o nó anterior.</li>
+  <li>Lista Circularmente Encadeada: O último nó aponta para o primeiro, formando um círculo.</li>
+</ul>
 
-<h2 id="tipos">Estruturas de Nó</h2>
+<h2 id="node">Estruturas de Nó</h2>
 <ol>
   <li>Lista Encadeada Simples</li>
   <p>Na lista encadeada simples, cada nó contém um valor e um ponteiro para o próximo nó. O último nó aponta para NULL.</p>
@@ -29,7 +31,7 @@ Lista Circularmente Encadeada: O último nó aponta para o primeiro, formando um
     struct Node* next;
     } Node;
 
-<li id="node">Listas com Cabeça</li>
+<li>Listas com Cabeça</li>
   <p>Na lista com cabeça, há uma estrutura adicional que armazena informações sobre a quantidade de elementos e ponteiros para o primeiro e o último nós.</p>
   
           typedef struct no
@@ -44,7 +46,14 @@ Lista Circularmente Encadeada: O último nó aponta para o primeiro, formando um
           TNo *prox, *ult;
       } TCabeca;
 
-</ol>
+  <h3>Características:</h3>
+<ul>
+  <li>Inserção: Pode ser feita no início, meio ou fim da lista.</li>
+  <li>Remoção: Mais eficiente que a lista encadeada simples, pois não precisa percorrer a lista para ajustar o nó anterior.</li>
+  <li>Busca: Pode ser feita em ambas as direções.</li>
+</ul>
+
+
 
 </ol>
 <h2 id="inst">Instalação</h2>
@@ -58,3 +67,5 @@ Lista Circularmente Encadeada: O último nó aponta para o primeiro, formando um
     gcc main.c -o main
     ./main
 </ol>
+
+
